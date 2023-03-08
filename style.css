@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position: right -25vh bottom -45vh, left -25vh top -45vh;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+}
+
+p {
+    font-size: 18px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.main {
+    text-align: center;
+}
+
+.main img {
+    border-radius: 50px;
+    border: solid 4px white;
+    margin-top: -50px;
+}
+
+.name {
+    font-weight: 700;
+    margin: 1rem 0;
+    color: hsl(229, 23%, 23%);
+}
+
+.age {
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+}
+
+.city {
+    font-size: 1rem;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 2rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    border-top: 1px solid hsl(0, 0%, 89%);
+}
+
+.footer-box{
+    text-align: center;
+}
+
+.footer-number {
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.footer-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    color: hsl(0, 0%, 59%);
+}
+
+@media screen and (max-width:375px) {
+
+   body{
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-position: right -750px bottom -350px, left -750px top -350px;
+}
+
+}
